@@ -27,11 +27,16 @@
   </body>
   <script>
     let response;
-    let score = 75;
-    let machineActive = false;
+    let score = 101;
+    let machineActive = true;
 
     if(machineActive) {
       // Add your code here
+      switch (machineActive) {
+        case score > 100 || score < 0:
+          response = 'This is not possible, an error has occured.';
+          break;
+      }
     } else {
       response = 'The machine is turned off. Turn it on to process your score.';
     }
