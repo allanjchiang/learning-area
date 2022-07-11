@@ -27,7 +27,7 @@
   </body>
   <script>
     let response;
-    let score = 101;
+    let score = 19;
     let machineActive = true;
 
     if(machineActive) {
@@ -35,6 +35,10 @@
       switch (machineActive) {
         case score > 100 || score < 0:
           response = 'This is not possible, an error has occured.';
+          break;
+
+        case score >= 0 && score <= 19:
+          response = 'That was a terrible score -- Total fail!';
           break;
       }
     } else {
