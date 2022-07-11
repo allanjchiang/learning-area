@@ -27,7 +27,7 @@
   </body>
   <script>
     let response;
-    let score = 20;
+    let score = 45;
     let machineActive = true;
 
     if(machineActive) {
@@ -42,10 +42,12 @@
           break;
 
         case score >= 20 && score <= 39:
-          response = 'You know some things, but it\'s a pretty bad score. Needs improvement.'
+          response = 'You know some things, but it\'s a pretty bad score. Needs improvement.';
           break;
 
-        
+        case score >= 40 && score <= 69:
+          response = 'You did a passable job, not bad!';
+          break;
       }
     } else {
       response = 'The machine is turned off. Turn it on to process your score.';
