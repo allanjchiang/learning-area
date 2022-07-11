@@ -33,6 +33,12 @@
     let pwdResult;
 
     // Add your code here
+    if (machineActive === true) {
+      machineResult = 'The machine is switched on.';
+      (pwd === 'cheese') ? pwdResult = 'You logged in successfully.' : pwdResult = 'Login failed.';
+    } else {
+      machineResult = 'The machine is switched off.';
+    }
 
     // Don't edit the code below here!
 
