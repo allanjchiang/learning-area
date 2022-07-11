@@ -25,7 +25,7 @@
   
   <script>
     let response;
-    let score = 15;
+    let score = 25;
     let machineActive = true;
   
     // Add your code here
@@ -34,6 +34,8 @@
         response = 'This is not possible, an error has occured.';
       } else if (score >= 0 && score <= 19) {
         response = 'That was a terrible score -- total fail!';
+      } else if (score >= 20 && score <= 39) {
+        response = 'You know some things, but it\'s a pretty bad score. Needs improvement.'
       }
     }
 
