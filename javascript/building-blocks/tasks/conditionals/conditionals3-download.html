@@ -27,7 +27,7 @@
   </body>
   <script>
     let response;
-    let score = 45;
+    let score = 70;
     let machineActive = true;
 
     if(machineActive) {
@@ -47,6 +47,10 @@
 
         case score >= 40 && score <= 69:
           response = 'You did a passable job, not bad!';
+          break;
+
+        case score >= 70 && score <= 89:
+          response = 'That\'s a great score, you really know your stuff.';
           break;
       }
     } else {
