@@ -9,7 +9,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        width: 200px;
+        width: 242px;
         background: #eee;
       }
 
@@ -36,9 +36,9 @@
 
     <script>
         const btn = document.querySelector('button');
-        btn.addEventListener('click', displayMessage);
+        btn.addEventListener('click', () => displayMessage('Testing'));
 
-        function displayMessage() {
+        function displayMessage(msgText, msgType) {
           const body = document.body;
 
           const panel = document.createElement('div');
@@ -46,7 +46,7 @@
           body.appendChild(panel);
 
           const msg = document.createElement('p');
-          msg.textContent = 'This is a message box';
+          msg.textContent = msgText;
           panel.appendChild(msg);
 
           const closeBtn = document.createElement('button');
