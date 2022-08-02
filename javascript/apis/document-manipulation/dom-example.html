@@ -22,7 +22,7 @@
         const linkPara = document.querySelector('a');
         linkPara.appendChild(text);
         sect.appendChild(linkPara);
-        linkPara.remove();
+        linkPara.parentNode.removeChild(linkPara);
       </script>
   </body>
 </html>
