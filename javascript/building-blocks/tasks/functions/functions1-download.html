@@ -26,10 +26,18 @@
 
   </body>
   <script>
-    const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
+    const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada'];
     const para = document.createElement('p');
 
     // Add your code here
+    function chooseName(names) {
+      for (let i = 0; i < 2; i++) {
+        const randomName = names[Math.floor(Math.random() * names.length)];
+        para.innerHTML = randomName;
+      }
+    }
+
+    chooseName(names);
 
     // Don't edit the code below here!
 
