@@ -42,8 +42,13 @@
     const color = 'blue';
 
     // Add your code here
-    ctx.fillStyle = color;
-    ctx.fillRect(x, y, width, height);
+    function draw() {
+      ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+      ctx.fillStyle = color;
+      ctx.fillRect(x, y, width, height);
+    }
+    
+    draw();
 
     // Don't edit the code below here!
 
