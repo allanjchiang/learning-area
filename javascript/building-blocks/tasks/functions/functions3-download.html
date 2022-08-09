@@ -31,12 +31,16 @@
 
     // Add your code here
       function random(min, max) {
-        const randomNumber = (Math.floor(Math.random() * (max - min) + min));
+        const randomNumber = Math.floor(Math.random() * (max - min)) + min;
+        return randomNumber;
       }
       
       function chooseName(names) {
-        
+        const randomName = names[random(0, names.length)];
+        return randomName;
       }
+
+      para.textContent = chooseName(names);
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
